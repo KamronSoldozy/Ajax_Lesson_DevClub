@@ -15,12 +15,15 @@
   }
 
   function alertContents() {
+    console.log(54);
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      console.log(5)
      if (httpRequest.status === 200) {
         var xmldoc = httpRequest.responseXML;
         var root_node = xmldoc.getElementsByTagName('root').item(0);  //how to access response text in XML files
         alert(root_node.firstChild.data);
-      } else {
+      }
+       else {
         alert('There was a problem with the request.');
       }
     }
