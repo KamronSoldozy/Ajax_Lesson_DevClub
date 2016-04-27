@@ -2,7 +2,7 @@
   var httpRequest;
   document.getElementById("ajaxButton1").onclick = function() { makeRequest('1.xml'); };
   document.getElementById("ajaxButton2").onclick = function() { makeRequest('2.xml'); };
-  document.getElementById("ajaxButton3").onclick = function() { makeRequest('3.xml'); };
+  document.getElementById("ajaxButton3").onclick = function() { makeRequest('4.xml'); };
   function makeRequest(url) {
     httpRequest = new XMLHttpRequest();
 
